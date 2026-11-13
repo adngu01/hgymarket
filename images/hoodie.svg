@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img" aria-labelledby="title">
+  <title id="title">Mörkröd HGY hoodie</title>
+  <rect width="400" height="320" rx="12" fill="#f7f3f0"/>
+  <path d="M153 75c7-31 26-48 47-48s40 17 47 48l42 19 37 41-31 27-22-20v115H127V142l-22 20-31-27 37-41 42-19Z" fill="#8f2632" stroke="#641923" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M153 75c10 23 25 35 47 35s37-12 47-35c-5-26-23-42-47-42s-42 16-47 42Z" fill="#641923" stroke="#50141c" stroke-width="5"/>
+  <path d="M177 92c3 17 10 29 23 38 13-9 20-21 23-38" fill="none" stroke="#d9a6a2" stroke-width="4" stroke-linecap="round"/>
+  <path d="M165 177h70v48h-70z" fill="#7c202c" stroke="#641923" stroke-width="4" stroke-linejoin="round"/>
+  <text x="200" y="156" fill="#fff" font-family="Arial,sans-serif" font-size="21" font-weight="700" text-anchor="middle" letter-spacing="3">HGY</text>
+</svg>

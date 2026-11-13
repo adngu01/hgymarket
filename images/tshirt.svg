@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img" aria-labelledby="title">
+  <title id="title">Ljus t-shirt från HGY</title>
+  <rect width="400" height="320" rx="12" fill="#f7f3f0"/>
+  <path d="m137 69 36-19c7 15 16 22 27 22s20-7 27-22l36 19 50 38-28 43-34-20v125H149V130l-34 20-28-43 50-38Z" fill="#fff" stroke="#d8c8c0" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M173 51c5 17 14 25 27 25s22-8 27-25" fill="none" stroke="#d8c8c0" stroke-width="5"/>
+  <text x="200" y="148" fill="#8f2632" font-family="Arial,sans-serif" font-size="23" font-weight="700" text-anchor="middle" letter-spacing="3">HGY</text>
+</svg>

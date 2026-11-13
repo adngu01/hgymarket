@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img" aria-labelledby="title">
+  <title id="title">Mörkröda HGY sweatpants</title>
+  <rect width="400" height="320" rx="12" fill="#f7f3f0"/>
+  <path d="M126 54h148l-8 83-9 135h-70l-3-111-6 111h-70l-1-135-8-83Z" fill="#8f2632" stroke="#641923" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M126 54h148l-3 32H129l-3-32Z" fill="#641923"/>
+  <path d="M200 86v73" stroke="#641923" stroke-width="5"/>
+  <path d="M139 102h34" stroke="#c8797d" stroke-width="4" stroke-linecap="round"/>
+  <text x="231" y="118" fill="#fff" font-family="Arial,sans-serif" font-size="18" font-weight="700" text-anchor="middle" letter-spacing="2">HGY</text>
+</svg>

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 320" role="img" aria-labelledby="title">
+  <title id="title">Mörkröd HGY keps</title>
+  <rect width="400" height="320" rx="12" fill="#f7f3f0"/>
+  <path d="M88 190c4-62 50-108 112-108 60 0 103 41 112 102-52-18-131-20-224 6Z" fill="#8f2632" stroke="#641923" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M88 190c76-23 157-25 241-1 12 3 19 12 17 21-2 10-13 16-26 16H100c-14 0-23-7-23-17 0-8 4-15 11-19Z" fill="#a93843" stroke="#641923" stroke-width="5"/>
+  <path d="M200 84v91" stroke="#641923" stroke-width="4" opacity=".65"/>
+  <text x="200" y="161" fill="#fff" font-family="Arial,sans-serif" font-size="24" font-weight="700" text-anchor="middle" letter-spacing="3">HGY</text>
+</svg>

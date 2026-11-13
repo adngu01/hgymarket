@@ -6,13 +6,13 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #ffffff;
     color: #222;
 }
 
 header {
-    background-color: #111;
-    color: white;
+    background-color: #ffffff;
+    color: #eb0f0f;
     padding: 20px 50px;
 
     display: flex;
@@ -25,7 +25,7 @@ header h1 {
 }
 
 nav a {
-    color: white;
+    color: #eb0f0f;
     text-decoration: none;
     margin-left: 25px;
 }
@@ -34,9 +34,131 @@ nav a:hover {
     text-decoration: underline;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav > a {
+    margin-left: 0;
+}
+
+.nav-dropdown {
+    position: relative;
+}
+
+.nav-icons {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.nav-icons .nav-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 18px;
+    height: 18px;
+    margin: 0;
+    color: #eb0f0f;
+    flex-shrink: 0;
+}
+
+.nav-icons .nav-icon svg {
+    display: block;
+    width: 18px !important;
+    height: 18px !important;
+    max-width: 18px;
+    max-height: 18px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.5;
+}
+
+.nav-icons .nav-icon:hover {
+    color: #c00;
+}
+
+/* Dropdown-menyn */
+.nav-dropdown summary {
+    color: #eb0f0f;
+    cursor: pointer;
+    list-style: none;
+}
+
+.nav-dropdown summary::-webkit-details-marker {
+    display: none;
+}
+
+.nav-dropdown > details > summary::after {
+    content: " \25BE";
+}
+
+/* Menyns utseende */
+.dropdown-menu,
+.dropdown-submenu {
+    position: absolute;
+    z-index: 10;
+    min-width: 160px;
+    padding: 8px 0;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    list-style: none;
+}
+
+/* Huvudmenyn */
+.dropdown-menu {
+    top: 100%;
+    left: 0;
+    display: none;
+}
+
+/* Visa dropdown-menyn */
+.nav-dropdown > details:hover > .dropdown-menu,
+.nav-dropdown > details:focus-within > .dropdown-menu,
+.nav-dropdown > details[open] > .dropdown-menu {
+    display: block;
+}
+
+/* Menyalternativ */
+.dropdown-menu li {
+    position: relative;
+}
+
+.dropdown-menu a,
+.dropdown-menu summary {
+    display: block;
+    margin: 0;
+    padding: 9px 16px;
+    color: #eb0f0f;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/* Hover-effekt på menyalternativ */
+.dropdown-menu a:hover,
+.dropdown-menu summary:hover {
+    background-color: #f7f3f0;
+    text-decoration: none;
+}
+
+/* Undermenyn */
+.dropdown-submenu {
+    top: 0;
+    right: 100%;
+    display: none;
+}
+
+/* Visa undermenyn */
+.dropdown-menu details:hover > .dropdown-submenu,
+.dropdown-menu details:focus-within > .dropdown-submenu,
+.dropdown-menu details[open] > .dropdown-submenu {
+    display: block;
+}
 .hero {
     text-align: center;
-    background-color: white;
+    background-color:  #f7f3f0;
     padding: 100px 20px;
 }
 
@@ -51,7 +173,7 @@ nav a:hover {
 }
 
 button {
-    background-color: #111;
+    background-color: #eb0f0f;
     color: white;
     border: none;
     padding: 12px 25px;
@@ -60,7 +182,7 @@ button {
 }
 
 button:hover {
-    background-color: #333;
+    background-color: #c00;
 }
 
 .welcome {
@@ -68,9 +190,139 @@ button:hover {
     padding: 50px;
 }
 
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+.product {
+    background: #99534B;
+    border-radius: 10px;
+    padding: 16px;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    display: block;
+    width: 100%;
+    height: 220px;
+    margin-bottom: 18px;
+    border-radius: 6px;
+    background-color: #f7f3f0;
+    object-fit: contain;
+}
+
+.product h2 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    color: #fff;
+}
+
+.product-price {
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #fff;
+    font-size: 18px;
+}
+
+.login-page {
+    min-height: calc(100vh - 145px);
+    display: grid;
+    place-items: center;
+    padding: 48px 20px;
+}
+
+.login-card {
+    width: min(100%, 440px);
+    padding: 40px;
+    background-color:#99534B;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+}
+
+.login-card h2 {
+    margin-bottom: 10px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.login-intro {
+    margin-bottom: 28px;
+    color: #555;
+    text-align: center;
+}
+
+.login-form {
+    display: grid;
+    gap: 20px;
+}
+
+.form-field {
+    display: grid;
+    gap: 8px;
+}
+
+.form-field label {
+    font-weight: bold;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #bbb;
+    border-radius: 5px;
+    font: inherit;
+}
+
+.form-field input:focus {
+    border-color: #eb0f0f;
+    outline: 2px solid rgba(235, 15, 15, 0.15);
+}
+
+.login-button {
+    width: 100%;
+    margin-top: 4px;
+    font: inherit;
+}
+
+.back-link {
+    display: block;
+    margin-top: 24px;
+    color: #222;
+    text-align: center;
+}
+
 footer {
     text-align: center;
-    background-color: #111;
+    background-color: #eb0f0f;
     color: white;
     padding: 20px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .dropdown-submenu {
+        position: static;
+        min-width: 0;
+        padding-left: 12px;
+        box-shadow: none;
+    }
+
+    .login-card {
+        padding: 30px 24px;
+    }
 }
