@@ -24,7 +24,7 @@
             <a href="cart.php">Varukorg</a>
             <a href="orders.php">Mina beställningar</a>
             <a href="login.php">Logga in</a>
-            <a href="register.php">Skapa konto</a>
+           <a href="register.php">Registrera</a>
         </nav>
 
     </header>

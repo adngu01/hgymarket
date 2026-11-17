@@ -1,18 +1,16 @@
 <?php
 
-require_once __DIR__ . '/../config/db.php';
+require_once __DIR__ . '/db.php';
 
 function addUser($felt) {
     global $forum;
 
     $username = trim($felt['username'] ?? '');
-    $namn = trim($felt['name'] ?? '');
     $email = trim($felt['email'] ?? '');
     $password = $felt['password'] ?? '';
 
     if (
         $username === '' ||
-        $namn === '' ||
         $email === '' ||
         $password === ''
     ) {
@@ -29,16 +27,15 @@ function addUser($felt) {
     );
 
     try {
-        $sql = "INSERT INTO user
-                (username, namn, email, password)
+        $sql = "INSERT INTO users
+                (username, email, password)
                 VALUES
-                (:username, :namn, :email, :password)";
+                (:username, :email, :password)";
 
         $stmt = $forum->prepare($sql);
 
         $stmt->execute([
             ':username' => $username,
-            ':namn' => $namn,
             ':email' => $email,
             ':password' => $hashedPassword
         ]);
