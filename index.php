@@ -25,6 +25,7 @@
             <a href="orders.php">Mina beställningar</a>
             <a href="login.php">Logga in</a>
            <a href="register.php">Registrera</a>
+           <a href="logout.php">Logga ut</a>
         </nav>
 
     </header>

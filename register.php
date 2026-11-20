@@ -21,8 +21,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $error = true;
 
     } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        $error = true;
-
+    $error = true;
+    
     } else {
 
         $userData = [

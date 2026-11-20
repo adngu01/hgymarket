@@ -72,12 +72,22 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <body>
 
     <nav>
-        <a href="index.php">Hem</a>
-        <a href="products.php">Produkter</a>
+    <a href="index.php">Hem</a>
+    <a href="products.php">Produkter</a>
+
+    <?php if (isset($_SESSION['user_id'])): ?>
+
+        <a href="cart.php">Varukorg</a>
+        <a href="orders.php">Mina beställningar</a>
+        <a href="logout.php">Logga ut</a>
+
+    <?php else: ?>
+
         <a href="register.php">Registrera</a>
         <a href="login.php">Logga in</a>
-    </nav>
 
+    <?php endif; ?>
+</nav>
     <main>
 
         <h1>Logga in</h1>
